@@ -1,0 +1,66 @@
+install & configure virtual host
+  - https://linuxconfig.org/kali-http-server-setup
+
+if you are free try to learn -> search on youtube -> Apache Virtual Hosts
+
+Repo update
+----------------
+    Type sudo -i
+    Type in your password.
+    Type touch /etc/apt/sources.list
+    Type chmod 644 /etc/apt/sources.list
+    Type echo "deb http://http.kali.org/kali kali-rolling main contrib non-free" > /etc/apt/sources.list
+    Type apt-key adv --keyserver hkp://keys.gnupg.net --recv-keys 7D8D0BF6
+    Type apt update
+    Now install whatever it is that you want to install.
+
+sudo curl -sL https://deb.nodesource.com/setup_7.x | bash -
+ps aux | grep apt
+sudo rm /var/lib/apt/lists/lock && sudo rm /var/lib/dpkg/lock
+
+
+{upgrade version :  sudo do-release-upgrade -d , dist upgrade, software updater }
+1. sudo apt update && sudo apt-get upgrade --fix-missing
+2. sudo apt install build-essential checkinstall
+linux : https://www.youtube.com/channel/UCVPPcG_DnwE_L1YgiIGsSIA/videos
+
+1. sudo apt update -y
+2. sudo apt upgrade -y
+3. lsb_release -a
+---------------
+kali repository:
+sudo  apt update
+mousepad /etc/apt/sources.list
+deb http://http.kali.org/kali kali-rolling main contrib non-free
+deb-src http://http.kali.org/kali kali-rolling main contrib non-free
+sudo apt full-upgrade -y
+================================
+ubuntu
+	sudo apt-get --fix-broken install
+	sudo apt update && sudo apt -y full-upgrade
+	sudo apt-get install python3-pip
+	 pip3 search scrapy
+
+echo "Cleaning Up" &&
+sudo apt-get -f install &&
+sudo apt-get autoremove &&
+sudo apt-get -y autoclean && 
+suod apt-get -y clean
+
+
+prepare tools installing hacking: https://github.com/nahamsec/bbht
+-----------------------------
+-------------------------------------------------
+Enable SSH in Ubuntu 18.04 LTS / Ubuntu 20.04 
+#ssh user @ ip -p 123l
+1. ssh localhost
+2.sudo apt-get install openssh-server
+3. sudo service ssh status
+4. ssh localhost
+5. sudo nano /etc/ssh/sshd_config
+==============================================
+sudo apt install terminator or 
+sudo apt install tmux
+
+
+
